@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: '16'
       - name: Change directories
-        working-directory: ./hello-github-actions
-      - run: npm install
-      - run: npm test
+        run: | 
+            cd hello-github-actions
+            npm install
+            npm test
