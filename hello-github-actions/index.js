@@ -1,5 +1,5 @@
 function hello() {
-    return "Hello, Github Actions!"
+    return "Hello, GitHub Actions!"
 }
 
 module.exports = hello;
