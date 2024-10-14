@@ -4,17 +4,16 @@ on:
   push:
     branches:
       - main
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-     - uses: actions/checkout@v2
-     - name: Set up Node.js
-       uses: actions/setup-node@v3
-
-       with:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
           node-version: '16'
-     - run: npm install
-     - run: npm test
+      - run: npm install
+      - run: npm test
